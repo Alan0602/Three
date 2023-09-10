@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { TextureLoader } from 'three';
-import saturn from '../assets/2k_saturn_ring_alpha.png';
+import saturn from '../assets/2k_earth_nightmap.jpg';
 
 
 
@@ -20,6 +20,8 @@ const ThreeScene: React.FC = () => {
       1000
     );
     camera.position.z = 4;
+    camera.position.y = 2;
+    camera.zoom = 4.5;
 
     // Create a WebGLRenderer
     const renderer = new THREE.WebGLRenderer();
